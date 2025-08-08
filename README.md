@@ -11,7 +11,9 @@ Use filtering with HAVING clause.
 
 
 🛠 Tools Used
-DB Browser for SQLite
+
+DB Browser for SQLite,
+
 You can also run these queries in MySQL Workbench
 
 
