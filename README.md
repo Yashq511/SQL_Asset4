@@ -28,6 +28,7 @@ HAVING	 - To filter grouped results.
 🛠️ Sample Queries
 
  --Total Salary by Department
+ 
 SELECT department, SUM(salary) AS total_salary
 FROM employees_01
 GROUP BY department;
@@ -39,17 +40,20 @@ FROM employees_01
 GROUP BY department;
 
 --Total Number of Employees per Department
+
 SELECT department, COUNT(*) AS total_employees
 FROM employees_01
 GROUP BY department;
 
 --Departments with Average Salary > 55000
+
 SELECT department, AVG(salary) AS avg_salary
 FROM employees_01
 GROUP BY department
 HAVING AVG(salary) > 55000;
 
 -- Highest Salary by Department
+
 SELECT department, MAX(salary) AS highest_salary
 FROM employees_01
 GROUP BY department;
